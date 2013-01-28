@@ -10,6 +10,12 @@
 		D823B76216B6785C004ECC57 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76116B6785C004ECC57 /* Vertex.m */; };
 		D823B76516B67BC4004ECC57 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76416B67BC4004ECC57 /* Stroke.m */; };
 		D823B76816B6895D004ECC57 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76716B6895D004ECC57 /* Dot.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		D85D115016B6BE0900CA46F0 /* Dot1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114A16B6BE0900CA46F0 /* Dot1.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		D85D115116B6BE0900CA46F0 /* Stroke1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114D16B6BE0900CA46F0 /* Stroke1.m */; };
+		D85D115216B6BE0900CA46F0 /* Vertex1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114F16B6BE0900CA46F0 /* Vertex1.m */; };
+		D85D115516B6C1C900CA46F0 /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D115416B6C1C900CA46F0 /* MarkEnumerator.m */; };
+		D85D115A16B6C4CA00CA46F0 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D115916B6C4CA00CA46F0 /* NSMutableArray+Stack.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		D85D116216B6F63900CA46F0 /* IteratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D116116B6F63800CA46F0 /* IteratorViewController.m */; };
 		D86329A716B296E800600875 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86329A616B296E800600875 /* UIKit.framework */; };
 		D86329A916B296E800600875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86329A816B296E800600875 /* Foundation.framework */; };
 		D86329AB16B296E800600875 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86329AA16B296E800600875 /* CoreGraphics.framework */; };
@@ -44,6 +50,20 @@
 		D823B76416B67BC4004ECC57 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		D823B76616B6895D004ECC57 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		D823B76716B6895D004ECC57 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		D85D114916B6BE0900CA46F0 /* Dot1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot1.h; sourceTree = "<group>"; };
+		D85D114A16B6BE0900CA46F0 /* Dot1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot1.m; sourceTree = "<group>"; };
+		D85D114B16B6BE0900CA46F0 /* Mark1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark1.h; sourceTree = "<group>"; };
+		D85D114C16B6BE0900CA46F0 /* Stroke1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke1.h; sourceTree = "<group>"; };
+		D85D114D16B6BE0900CA46F0 /* Stroke1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke1.m; sourceTree = "<group>"; };
+		D85D114E16B6BE0900CA46F0 /* Vertex1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex1.h; sourceTree = "<group>"; };
+		D85D114F16B6BE0900CA46F0 /* Vertex1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex1.m; sourceTree = "<group>"; };
+		D85D115316B6C1C900CA46F0 /* MarkEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
+		D85D115416B6C1C900CA46F0 /* MarkEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
+		D85D115816B6C4CA00CA46F0 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		D85D115916B6C4CA00CA46F0 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		D85D115F16B6F18100CA46F0 /* MarkEnumerator+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarkEnumerator+Internal.h"; sourceTree = "<group>"; };
+		D85D116016B6F63800CA46F0 /* IteratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IteratorViewController.h; sourceTree = SOURCE_ROOT; };
+		D85D116116B6F63800CA46F0 /* IteratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IteratorViewController.m; sourceTree = SOURCE_ROOT; };
 		D86329A216B296E800600875 /* SinglonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinglonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86329A616B296E800600875 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D86329A816B296E800600875 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +134,34 @@
 			name = Composite;
 			sourceTree = "<group>";
 		};
+		D85D114716B6BD7900CA46F0 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				D85D114916B6BE0900CA46F0 /* Dot1.h */,
+				D85D114A16B6BE0900CA46F0 /* Dot1.m */,
+				D85D114B16B6BE0900CA46F0 /* Mark1.h */,
+				D85D115316B6C1C900CA46F0 /* MarkEnumerator.h */,
+				D85D115416B6C1C900CA46F0 /* MarkEnumerator.m */,
+				D85D115F16B6F18100CA46F0 /* MarkEnumerator+Internal.h */,
+				D85D114C16B6BE0900CA46F0 /* Stroke1.h */,
+				D85D114D16B6BE0900CA46F0 /* Stroke1.m */,
+				D85D114E16B6BE0900CA46F0 /* Vertex1.h */,
+				D85D114F16B6BE0900CA46F0 /* Vertex1.m */,
+				D85D116016B6F63800CA46F0 /* IteratorViewController.h */,
+				D85D116116B6F63800CA46F0 /* IteratorViewController.m */,
+			);
+			name = Iterator;
+			sourceTree = "<group>";
+		};
+		D85D115616B6C4BA00CA46F0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D85D115816B6C4CA00CA46F0 /* NSMutableArray+Stack.h */,
+				D85D115916B6C4CA00CA46F0 /* NSMutableArray+Stack.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		D863299716B296E800600875 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +195,8 @@
 		D86329AC16B296E800600875 /* SinglonTest */ = {
 			isa = PBXGroup;
 			children = (
+				D85D115616B6C4BA00CA46F0 /* Tools */,
+				D85D114716B6BD7900CA46F0 /* Iterator */,
 				D823B75A16B67647004ECC57 /* Composite */,
 				D823B75816B67633004ECC57 /* Singleton */,
 				D86329B516B296E900600875 /* AppDelegate.h */,
@@ -302,6 +352,12 @@
 				D823B76216B6785C004ECC57 /* Vertex.m in Sources */,
 				D823B76516B67BC4004ECC57 /* Stroke.m in Sources */,
 				D823B76816B6895D004ECC57 /* Dot.m in Sources */,
+				D85D115016B6BE0900CA46F0 /* Dot1.m in Sources */,
+				D85D115116B6BE0900CA46F0 /* Stroke1.m in Sources */,
+				D85D115216B6BE0900CA46F0 /* Vertex1.m in Sources */,
+				D85D115516B6C1C900CA46F0 /* MarkEnumerator.m in Sources */,
+				D85D115A16B6C4CA00CA46F0 /* NSMutableArray+Stack.m in Sources */,
+				D85D116216B6F63900CA46F0 /* IteratorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

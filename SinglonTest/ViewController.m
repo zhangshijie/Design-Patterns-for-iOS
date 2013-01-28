@@ -10,6 +10,9 @@
 #import "Dot.h"
 #import "Stroke.h"
 #import "Vertex.h"
+#import "Dot1.h"
+#import "Stroke1.h"
+#import "Vertex1.h"
 @interface ViewController ()
 
 @end
@@ -32,8 +35,30 @@
     
     [aStroke addMark:newStroke];
     
+    //Iterator模式
+    //组建Composite
+    Dot1 *aDot1 = [[Dot1 alloc] init];
+    Stroke1 *aStroke1 = [[Stroke1 alloc ] init];
+    aDot1.tag=11;
+    aStroke1.tag=12;
     
+    [aStroke1 addMark:aDot1];
     
+    Vertex1 *aVertex1 = [[Vertex1 alloc]init];
+    Stroke1 *newStroke1 = [[Stroke1 alloc]init];
+    aVertex1.tag=21;
+    newStroke1.tag=22;
+    
+    [newStroke1 addMark:aVertex1];
+    
+    [aStroke1 addMark:newStroke1];
+    //通过外部迭代器
+    NSEnumerator *enumerator = [aStroke1 enumerator];
+    do {
+        id <Mark1> currentMark1= enumerator.nextObject;
+        NSLog(@"%d",[currentMark1 tag]);
+        
+    } while (enumerator.nextObject);
     
 }
 
