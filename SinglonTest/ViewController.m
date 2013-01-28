@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "Dot.h"
+#import "Stroke.h"
+#import "Vertex.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +19,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+	//Composite 模式 将对象组合成树形结构以表示“部分-整体”的层次结构，组合使得用户对单个对象和组合对象的使用更具有一致性。
+    //组建Composite
+    Dot *aDot = [[Dot alloc] init];
+    Stroke *aStroke = [[Stroke alloc ] init];
+    [aStroke addMark:aDot];
+    
+    Vertex *aVertex = [[Vertex alloc]init];
+    Stroke *newStroke = [[Stroke alloc]init];
+    [newStroke addMark:aVertex];
+    
+    [aStroke addMark:newStroke];
+    
+    
+    
+    
 }
 
 - (void)viewDidUnload

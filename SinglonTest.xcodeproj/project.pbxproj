@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D823B76216B6785C004ECC57 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76116B6785C004ECC57 /* Vertex.m */; };
+		D823B76516B67BC4004ECC57 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76416B67BC4004ECC57 /* Stroke.m */; };
+		D823B76816B6895D004ECC57 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76716B6895D004ECC57 /* Dot.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
 		D86329A716B296E800600875 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86329A616B296E800600875 /* UIKit.framework */; };
 		D86329A916B296E800600875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86329A816B296E800600875 /* Foundation.framework */; };
 		D86329AB16B296E800600875 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86329AA16B296E800600875 /* CoreGraphics.framework */; };
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D823B75F16B676F3004ECC57 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		D823B76016B6785C004ECC57 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		D823B76116B6785C004ECC57 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		D823B76316B67BC4004ECC57 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		D823B76416B67BC4004ECC57 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		D823B76616B6895D004ECC57 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		D823B76716B6895D004ECC57 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		D86329A216B296E800600875 /* SinglonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinglonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86329A616B296E800600875 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D86329A816B296E800600875 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,6 +91,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D823B75816B67633004ECC57 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				D86329DE16B2979600600875 /* Singleton.h */,
+				D86329DF16B2979600600875 /* Singleton.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		D823B75A16B67647004ECC57 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				D823B75F16B676F3004ECC57 /* Mark.h */,
+				D823B76016B6785C004ECC57 /* Vertex.h */,
+				D823B76116B6785C004ECC57 /* Vertex.m */,
+				D823B76316B67BC4004ECC57 /* Stroke.h */,
+				D823B76416B67BC4004ECC57 /* Stroke.m */,
+				D823B76616B6895D004ECC57 /* Dot.h */,
+				D823B76716B6895D004ECC57 /* Dot.m */,
+			);
+			name = Composite;
+			sourceTree = "<group>";
+		};
 		D863299716B296E800600875 = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +147,8 @@
 		D86329AC16B296E800600875 /* SinglonTest */ = {
 			isa = PBXGroup;
 			children = (
-				D86329DE16B2979600600875 /* Singleton.h */,
-				D86329DF16B2979600600875 /* Singleton.m */,
+				D823B75A16B67647004ECC57 /* Composite */,
+				D823B75816B67633004ECC57 /* Singleton */,
 				D86329B516B296E900600875 /* AppDelegate.h */,
 				D86329B616B296E900600875 /* AppDelegate.m */,
 				D86329B816B296E900600875 /* ViewController.h */,
@@ -266,6 +299,9 @@
 				D86329B716B296E900600875 /* AppDelegate.m in Sources */,
 				D86329BA16B296E900600875 /* ViewController.m in Sources */,
 				D86329E016B2979600600875 /* Singleton.m in Sources */,
+				D823B76216B6785C004ECC57 /* Vertex.m in Sources */,
+				D823B76516B67BC4004ECC57 /* Stroke.m in Sources */,
+				D823B76816B6895D004ECC57 /* Dot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +471,7 @@
 				D86329D716B296E900600875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D86329D816B296E900600875 /* Build configuration list for PBXNativeTarget "SinglonTestTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +480,7 @@
 				D86329DA16B296E900600875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
