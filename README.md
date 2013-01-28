@@ -6,3 +6,4 @@ Design-Patterns-for-iOS
     Now I have these Design Patterns writeden by Objective-C.
     1.Singleton
     2.Composite
+    3.Iterator
