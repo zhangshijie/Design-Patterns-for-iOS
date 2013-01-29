@@ -39,6 +39,12 @@
 		D8CC537A16B7DADA00A9B602 /* ImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC537916B7DADA00A9B602 /* ImageTransformFilter.m */; };
 		D8CC537D16B7DC9100A9B602 /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC537C16B7DC9100A9B602 /* ImageShadowFilter.m */; };
 		D8CC538616B7E27700A9B602 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC538516B7E27700A9B602 /* Image.png */; };
+		D8CC539516B81DEC00A9B602 /* Attack.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC539416B81DEC00A9B602 /* Attack.m */; };
+		D8CC539816B81E0000A9B602 /* Attacks1.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC539716B81E0000A9B602 /* Attacks1.m */; };
+		D8CC539B16B81E0D00A9B602 /* Attacks2.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC539A16B81E0D00A9B602 /* Attacks2.m */; };
+		D8CC539E16B81E1C00A9B602 /* AttackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC539D16B81E1C00A9B602 /* AttackHandler.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		D8CC53A116B81E7600A9B602 /* AttackHandler1.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC53A016B81E7600A9B602 /* AttackHandler1.m */; };
+		D8CC53A416B821A500A9B602 /* AttackHandler2.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC53A316B821A500A9B602 /* AttackHandler2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +120,18 @@
 		D8CC537B16B7DC9100A9B602 /* ImageShadowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageShadowFilter.h; sourceTree = "<group>"; };
 		D8CC537C16B7DC9100A9B602 /* ImageShadowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageShadowFilter.m; sourceTree = "<group>"; };
 		D8CC538516B7E27700A9B602 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Image.png; path = Images/Image.png; sourceTree = "<group>"; };
+		D8CC539316B81DEC00A9B602 /* Attack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attack.h; sourceTree = "<group>"; };
+		D8CC539416B81DEC00A9B602 /* Attack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attack.m; sourceTree = "<group>"; };
+		D8CC539616B81E0000A9B602 /* Attacks1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attacks1.h; sourceTree = "<group>"; };
+		D8CC539716B81E0000A9B602 /* Attacks1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attacks1.m; sourceTree = "<group>"; };
+		D8CC539916B81E0D00A9B602 /* Attacks2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attacks2.h; sourceTree = "<group>"; };
+		D8CC539A16B81E0D00A9B602 /* Attacks2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attacks2.m; sourceTree = "<group>"; };
+		D8CC539C16B81E1C00A9B602 /* AttackHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackHandler.h; sourceTree = "<group>"; };
+		D8CC539D16B81E1C00A9B602 /* AttackHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackHandler.m; sourceTree = "<group>"; };
+		D8CC539F16B81E7600A9B602 /* AttackHandler1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackHandler1.h; sourceTree = "<group>"; };
+		D8CC53A016B81E7600A9B602 /* AttackHandler1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackHandler1.m; sourceTree = "<group>"; };
+		D8CC53A216B821A500A9B602 /* AttackHandler2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackHandler2.h; sourceTree = "<group>"; };
+		D8CC53A316B821A500A9B602 /* AttackHandler2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackHandler2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +260,7 @@
 		D86329AC16B296E800600875 /* SinglonTest */ = {
 			isa = PBXGroup;
 			children = (
+				D8CC538F16B81DB900A9B602 /* ChainOfResponsibility */,
 				D8CC536F16B7D81200A9B602 /* Decorator */,
 				D843C04D16B79427009AC658 /* Visitor */,
 				D85D115616B6C4BA00CA46F0 /* Tools */,
@@ -319,6 +338,41 @@
 				D8CC538516B7E27700A9B602 /* Image.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		D8CC538F16B81DB900A9B602 /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				D8CC539216B81DD600A9B602 /* Attacks */,
+				D8CC539116B81DC700A9B602 /* AttackHandlers */,
+			);
+			name = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
+		D8CC539116B81DC700A9B602 /* AttackHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				D8CC539C16B81E1C00A9B602 /* AttackHandler.h */,
+				D8CC53A216B821A500A9B602 /* AttackHandler2.h */,
+				D8CC53A316B821A500A9B602 /* AttackHandler2.m */,
+				D8CC539F16B81E7600A9B602 /* AttackHandler1.h */,
+				D8CC53A016B81E7600A9B602 /* AttackHandler1.m */,
+				D8CC539D16B81E1C00A9B602 /* AttackHandler.m */,
+			);
+			name = AttackHandlers;
+			sourceTree = "<group>";
+		};
+		D8CC539216B81DD600A9B602 /* Attacks */ = {
+			isa = PBXGroup;
+			children = (
+				D8CC539316B81DEC00A9B602 /* Attack.h */,
+				D8CC539416B81DEC00A9B602 /* Attack.m */,
+				D8CC539616B81E0000A9B602 /* Attacks1.h */,
+				D8CC539716B81E0000A9B602 /* Attacks1.m */,
+				D8CC539916B81E0D00A9B602 /* Attacks2.h */,
+				D8CC539A16B81E0D00A9B602 /* Attacks2.m */,
+			);
+			name = Attacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +503,12 @@
 				D8CC537716B7D93700A9B602 /* Decorator.m in Sources */,
 				D8CC537A16B7DADA00A9B602 /* ImageTransformFilter.m in Sources */,
 				D8CC537D16B7DC9100A9B602 /* ImageShadowFilter.m in Sources */,
+				D8CC539516B81DEC00A9B602 /* Attack.m in Sources */,
+				D8CC539816B81E0000A9B602 /* Attacks1.m in Sources */,
+				D8CC539B16B81E0D00A9B602 /* Attacks2.m in Sources */,
+				D8CC539E16B81E1C00A9B602 /* AttackHandler.m in Sources */,
+				D8CC53A116B81E7600A9B602 /* AttackHandler1.m in Sources */,
+				D8CC53A416B821A500A9B602 /* AttackHandler2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

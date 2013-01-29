@@ -47,19 +47,6 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SinglonTest/ViewController.m"
-         timestampString = "381149061.961406"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "88"
-         endingLineNumber = "88"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "SinglonTest/ViewController.m"
          timestampString = "381149379.09199"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"

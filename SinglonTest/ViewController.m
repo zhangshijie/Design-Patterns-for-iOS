@@ -21,6 +21,14 @@
 #import "ImageCompent.h"
 #import "ImageShadowFilter.h"
 #import "ImageTransformFilter.h"
+#import "Attack.h"
+#import "Attacks1.h"
+#import "Attacks2.h"
+#import "AttackHandler.h"
+#import "AttackHandler1.h"
+#import "AttackHandler2.h"
+
+
 
 
 @interface ViewController ()
@@ -85,22 +93,35 @@
 //    //实例化visitor
 //    id <MarkVistor> *v= [[MarkRender alloc]init];
 //    [newStroke2 acceptMarkVisitor:v];
-    NSLog(@"here");
-    //Decorator模式
-    UIImage *image = [UIImage imageNamed:@"Image.png"];
+//    NSLog(@"here");
+//    //Decorator模式
+//    UIImage *image = [UIImage imageNamed:@"Image.png"];
+//    
+//    // create a tra2nsformation
+//    CGAffineTransform rotateTransform = CGAffineTransformMakeRotation(-M_PI / 4.0);
+//    CGAffineTransform translateTransform = CGAffineTransformMakeTranslation(-image.size.width / 2.0, 
+//                                                                            image.size.height / 8.0);
+//    CGAffineTransform finalTransform = CGAffineTransformConcat(rotateTransform, translateTransform);
+//    
+//    id <ImageCompent> transformedImage = [[ ImageTransformFilter alloc]initWithImageCompent:image :finalTransform];
+//    id <ImageCompent> finalImage =[[ImageShadowFilter alloc]initWithImageCompent:transformedImage];
+//    
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
+//    [imageView setImage:finalImage];
+//    [self.view addSubview:imageView];
+
+    //ChainOfResponsibility模式
     
-    // create a tra2nsformation
-    CGAffineTransform rotateTransform = CGAffineTransformMakeRotation(-M_PI / 4.0);
-    CGAffineTransform translateTransform = CGAffineTransformMakeTranslation(-image.size.width / 2.0, 
-                                                                            image.size.height / 8.0);
-    CGAffineTransform finalTransform = CGAffineTransformConcat(rotateTransform, translateTransform);
     
-    id <ImageCompent> transformedImage = [[ ImageTransformFilter alloc]initWithImageCompent:image :finalTransform];
-    id <ImageCompent> finalImage =[[ImageShadowFilter alloc]initWithImageCompent:transformedImage];
+    Attack *attack1 = [[Attacks1 alloc] init];
+    Attack *attack2 = [[Attacks2 alloc] init];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
-    [imageView setImage:finalImage];
-    [self.view addSubview:imageView];
+    AttackHandler *AttackHandler1 = [[AttackHandler1 alloc] init];
+    AttackHandler *AttackHandler2 = [[AttackHandler2 alloc] init];
+    AttackHandler1.nextHandler= AttackHandler2;
+    
+    [AttackHandler1 handle:attack1];
+    [AttackHandler1 handle:attack2];
     
     [super viewDidLoad];
 }
