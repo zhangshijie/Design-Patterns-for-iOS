@@ -10,6 +10,10 @@
 		D823B76216B6785C004ECC57 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76116B6785C004ECC57 /* Vertex.m */; };
 		D823B76516B67BC4004ECC57 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76416B67BC4004ECC57 /* Stroke.m */; };
 		D823B76816B6895D004ECC57 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B76716B6895D004ECC57 /* Dot.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		D843C05216B795F9009AC658 /* MarkRender.m in Sources */ = {isa = PBXBuildFile; fileRef = D843C05116B795F9009AC658 /* MarkRender.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		D843C05A16B7993D009AC658 /* Dot2.m in Sources */ = {isa = PBXBuildFile; fileRef = D843C05416B7993C009AC658 /* Dot2.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		D843C05B16B7993D009AC658 /* Stroke2.m in Sources */ = {isa = PBXBuildFile; fileRef = D843C05716B7993C009AC658 /* Stroke2.m */; };
+		D843C05C16B7993D009AC658 /* Vertex2.m in Sources */ = {isa = PBXBuildFile; fileRef = D843C05916B7993C009AC658 /* Vertex2.m */; };
 		D85D115016B6BE0900CA46F0 /* Dot1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114A16B6BE0900CA46F0 /* Dot1.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
 		D85D115116B6BE0900CA46F0 /* Stroke1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114D16B6BE0900CA46F0 /* Stroke1.m */; };
 		D85D115216B6BE0900CA46F0 /* Vertex1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114F16B6BE0900CA46F0 /* Vertex1.m */; };
@@ -50,6 +54,16 @@
 		D823B76416B67BC4004ECC57 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		D823B76616B6895D004ECC57 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		D823B76716B6895D004ECC57 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		D843C04F16B79579009AC658 /* MarkVistor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkVistor.h; sourceTree = "<group>"; };
+		D843C05016B795F9009AC658 /* MarkRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkRender.h; sourceTree = "<group>"; };
+		D843C05116B795F9009AC658 /* MarkRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkRender.m; sourceTree = "<group>"; };
+		D843C05316B7993C009AC658 /* Dot2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot2.h; sourceTree = "<group>"; };
+		D843C05416B7993C009AC658 /* Dot2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot2.m; sourceTree = "<group>"; };
+		D843C05516B7993C009AC658 /* Mark2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark2.h; sourceTree = "<group>"; };
+		D843C05616B7993C009AC658 /* Stroke2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke2.h; sourceTree = "<group>"; };
+		D843C05716B7993C009AC658 /* Stroke2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke2.m; sourceTree = "<group>"; };
+		D843C05816B7993C009AC658 /* Vertex2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex2.h; sourceTree = "<group>"; };
+		D843C05916B7993C009AC658 /* Vertex2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex2.m; sourceTree = "<group>"; };
 		D85D114916B6BE0900CA46F0 /* Dot1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot1.h; sourceTree = "<group>"; };
 		D85D114A16B6BE0900CA46F0 /* Dot1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot1.m; sourceTree = "<group>"; };
 		D85D114B16B6BE0900CA46F0 /* Mark1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark1.h; sourceTree = "<group>"; };
@@ -134,6 +148,23 @@
 			name = Composite;
 			sourceTree = "<group>";
 		};
+		D843C04D16B79427009AC658 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				D843C05316B7993C009AC658 /* Dot2.h */,
+				D843C05416B7993C009AC658 /* Dot2.m */,
+				D843C05516B7993C009AC658 /* Mark2.h */,
+				D843C05616B7993C009AC658 /* Stroke2.h */,
+				D843C05716B7993C009AC658 /* Stroke2.m */,
+				D843C05816B7993C009AC658 /* Vertex2.h */,
+				D843C05916B7993C009AC658 /* Vertex2.m */,
+				D843C04F16B79579009AC658 /* MarkVistor.h */,
+				D843C05016B795F9009AC658 /* MarkRender.h */,
+				D843C05116B795F9009AC658 /* MarkRender.m */,
+			);
+			name = Visitor;
+			sourceTree = "<group>";
+		};
 		D85D114716B6BD7900CA46F0 /* Iterator */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +226,7 @@
 		D86329AC16B296E800600875 /* SinglonTest */ = {
 			isa = PBXGroup;
 			children = (
+				D843C04D16B79427009AC658 /* Visitor */,
 				D85D115616B6C4BA00CA46F0 /* Tools */,
 				D85D114716B6BD7900CA46F0 /* Iterator */,
 				D823B75A16B67647004ECC57 /* Composite */,
@@ -358,6 +390,10 @@
 				D85D115516B6C1C900CA46F0 /* MarkEnumerator.m in Sources */,
 				D85D115A16B6C4CA00CA46F0 /* NSMutableArray+Stack.m in Sources */,
 				D85D116216B6F63900CA46F0 /* IteratorViewController.m in Sources */,
+				D843C05216B795F9009AC658 /* MarkRender.m in Sources */,
+				D843C05A16B7993D009AC658 /* Dot2.m in Sources */,
+				D843C05B16B7993D009AC658 /* Stroke2.m in Sources */,
+				D843C05C16B7993D009AC658 /* Vertex2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
