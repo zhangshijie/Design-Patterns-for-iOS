@@ -7,3 +7,4 @@ Design-Patterns-for-iOS
     1.Singleton
     2.Composite
     3.Iterator
+    4.Visitor
