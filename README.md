@@ -8,3 +8,5 @@ Design-Patterns-for-iOS
     2.Composite
     3.Iterator
     4.Visitor
+    5.Decorator
+    6.Chain Of Responsibility
