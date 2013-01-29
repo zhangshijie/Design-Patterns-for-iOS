@@ -18,14 +18,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    Singleton *mSingleton = [Singleton shareInstance];
-    
-    mSingleton.i=@"testest";
-    
-    Singleton *mSingleton2= [Singleton shareInstance];
+//    Singleton *mSingleton = [Singleton shareInstance];
+//    
+//    mSingleton.i=@"testest";
+//    
+//    Singleton *mSingleton2= [Singleton shareInstance];
       
-    NSLog(mSingleton2.i);
+//    NSLog(mSingleton2.i);
     
+//    [self.window addSubview: [UIImageView alloc] initWithImage:[UIImage imageNamed:@"Image.png"]];
+//    UIImage *image = [UIImage imageNamed:@"Image.png"];
+//    UIImageView *iamgeview = [[UIImageView alloc] initWithFrame:self.window.frame];
+//    [iamgeview setImage:image];
+//    [self.window addSubview:iamgeview];
     [self.window makeKeyAndVisible];
     return YES;
 }

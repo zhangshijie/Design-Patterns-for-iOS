@@ -34,6 +34,11 @@
 		D86329CF16B296E900600875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D86329CD16B296E900600875 /* InfoPlist.strings */; };
 		D86329D216B296E900600875 /* SinglonTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D86329D116B296E900600875 /* SinglonTestTests.m */; };
 		D86329E016B2979600600875 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = D86329DF16B2979600600875 /* Singleton.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		D8CC537416B7D8A400A9B602 /* UIImage+ImageCompent.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC537316B7D8A400A9B602 /* UIImage+ImageCompent.m */; };
+		D8CC537716B7D93700A9B602 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC537616B7D93700A9B602 /* Decorator.m */; };
+		D8CC537A16B7DADA00A9B602 /* ImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC537916B7DADA00A9B602 /* ImageTransformFilter.m */; };
+		D8CC537D16B7DC9100A9B602 /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC537C16B7DC9100A9B602 /* ImageShadowFilter.m */; };
+		D8CC538616B7E27700A9B602 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC538516B7E27700A9B602 /* Image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,16 @@
 		D86329D116B296E900600875 /* SinglonTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinglonTestTests.m; sourceTree = "<group>"; };
 		D86329DE16B2979600600875 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Singleton.h; path = ../Singleton.h; sourceTree = "<group>"; };
 		D86329DF16B2979600600875 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Singleton.m; path = ../Singleton.m; sourceTree = "<group>"; };
+		D8CC537116B7D84700A9B602 /* ImageCompent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCompent.h; sourceTree = "<group>"; };
+		D8CC537216B7D8A400A9B602 /* UIImage+ImageCompent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageCompent.h"; sourceTree = "<group>"; };
+		D8CC537316B7D8A400A9B602 /* UIImage+ImageCompent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageCompent.m"; sourceTree = "<group>"; };
+		D8CC537516B7D93700A9B602 /* Decorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decorator.h; sourceTree = "<group>"; };
+		D8CC537616B7D93700A9B602 /* Decorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decorator.m; sourceTree = "<group>"; };
+		D8CC537816B7DADA00A9B602 /* ImageTransformFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformFilter.h; sourceTree = "<group>"; };
+		D8CC537916B7DADA00A9B602 /* ImageTransformFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformFilter.m; sourceTree = "<group>"; };
+		D8CC537B16B7DC9100A9B602 /* ImageShadowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageShadowFilter.h; sourceTree = "<group>"; };
+		D8CC537C16B7DC9100A9B602 /* ImageShadowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageShadowFilter.m; sourceTree = "<group>"; };
+		D8CC538516B7E27700A9B602 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Image.png; path = Images/Image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D86329AC16B296E800600875 /* SinglonTest */,
+				D8CC537E16B7DD1800A9B602 /* Resources */,
 				D86329CA16B296E900600875 /* SinglonTestTests */,
 				D86329A516B296E800600875 /* Frameworks */,
 				D86329A316B296E800600875 /* Products */,
@@ -226,13 +242,14 @@
 		D86329AC16B296E800600875 /* SinglonTest */ = {
 			isa = PBXGroup;
 			children = (
+				D8CC536F16B7D81200A9B602 /* Decorator */,
 				D843C04D16B79427009AC658 /* Visitor */,
 				D85D115616B6C4BA00CA46F0 /* Tools */,
 				D85D114716B6BD7900CA46F0 /* Iterator */,
 				D823B75A16B67647004ECC57 /* Composite */,
+				D86329B616B296E900600875 /* AppDelegate.m */,
 				D823B75816B67633004ECC57 /* Singleton */,
 				D86329B516B296E900600875 /* AppDelegate.h */,
-				D86329B616B296E900600875 /* AppDelegate.m */,
 				D86329B816B296E900600875 /* ViewController.h */,
 				D86329B916B296E900600875 /* ViewController.m */,
 				D86329BB16B296E900600875 /* ViewController.xib */,
@@ -269,6 +286,39 @@
 				D86329CD16B296E900600875 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8CC536F16B7D81200A9B602 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				D8CC537516B7D93700A9B602 /* Decorator.h */,
+				D8CC537616B7D93700A9B602 /* Decorator.m */,
+				D8CC537116B7D84700A9B602 /* ImageCompent.h */,
+				D8CC537B16B7DC9100A9B602 /* ImageShadowFilter.h */,
+				D8CC537C16B7DC9100A9B602 /* ImageShadowFilter.m */,
+				D8CC537816B7DADA00A9B602 /* ImageTransformFilter.h */,
+				D8CC537916B7DADA00A9B602 /* ImageTransformFilter.m */,
+				D8CC537216B7D8A400A9B602 /* UIImage+ImageCompent.h */,
+				D8CC537316B7D8A400A9B602 /* UIImage+ImageCompent.m */,
+			);
+			name = Decorator;
+			sourceTree = "<group>";
+		};
+		D8CC537E16B7DD1800A9B602 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8CC538416B7E26400A9B602 /* Images */,
+			);
+			name = Resources;
+			path = SinglonTest;
+			sourceTree = "<group>";
+		};
+		D8CC538416B7E26400A9B602 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D8CC538516B7E27700A9B602 /* Image.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +393,7 @@
 			files = (
 				D86329B116B296E800600875 /* InfoPlist.strings in Resources */,
 				D86329BD16B296E900600875 /* ViewController.xib in Resources */,
+				D8CC538616B7E27700A9B602 /* Image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +445,10 @@
 				D843C05A16B7993D009AC658 /* Dot2.m in Sources */,
 				D843C05B16B7993D009AC658 /* Stroke2.m in Sources */,
 				D843C05C16B7993D009AC658 /* Vertex2.m in Sources */,
+				D8CC537416B7D8A400A9B602 /* UIImage+ImageCompent.m in Sources */,
+				D8CC537716B7D93700A9B602 /* Decorator.m in Sources */,
+				D8CC537A16B7DADA00A9B602 /* ImageTransformFilter.m in Sources */,
+				D8CC537D16B7DC9100A9B602 /* ImageShadowFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,11 @@
 #import "Vertex2.h"
 #import "MarkVistor.h"
 #import "MarkRender.h"
+#import "ImageCompent.h"
+#import "ImageShadowFilter.h"
+#import "ImageTransformFilter.h"
+
+
 @interface ViewController ()
 
 @end
@@ -26,7 +31,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    
     
 //	//Composite 模式 将对象组合成树形结构以表示“部分-整体”的层次结构，组合使得用户对单个对象和组合对象的使用更具有一致性。
 //    //组建Composite
@@ -66,23 +71,38 @@
 //    } while (enumerator.nextObject);
 
     
-    //visitor模式
-    //组建Composite
-    Dot2 *aDot2 = [[Dot2 alloc] init];
-    Stroke2 *aStroke2 = [[Stroke2 alloc ] init];
-    [aStroke2 addMark:aDot2];
+//    //visitor模式
+//    //组建Composite
+//    Dot2 *aDot2 = [[Dot2 alloc] init];
+//    Stroke2 *aStroke2 = [[Stroke2 alloc ] init];
+//    [aStroke2 addMark:aDot2];
+//    
+//    Vertex2 *aVertex2 = [[Vertex2 alloc]init];
+//    Stroke2 *newStroke2 = [[Stroke2 alloc]init];
+//
+//    [newStroke2 addMark:aVertex2];
+//    [aStroke2 addMark:newStroke2];
+//    //实例化visitor
+//    id <MarkVistor> *v= [[MarkRender alloc]init];
+//    [newStroke2 acceptMarkVisitor:v];
+    NSLog(@"here");
+    //Decorator模式
+    UIImage *image = [UIImage imageNamed:@"Image.png"];
     
-    Vertex2 *aVertex2 = [[Vertex2 alloc]init];
-    Stroke2 *newStroke2 = [[Stroke2 alloc]init];
-
-    [newStroke2 addMark:aVertex2];
-    [aStroke2 addMark:newStroke2];
-    //实例化visitor
-    id <MarkVistor> *v= [[MarkRender alloc]init];
-    [newStroke2 acceptMarkVisitor:v];
+    // create a tra2nsformation
+    CGAffineTransform rotateTransform = CGAffineTransformMakeRotation(-M_PI / 4.0);
+    CGAffineTransform translateTransform = CGAffineTransformMakeTranslation(-image.size.width / 2.0, 
+                                                                            image.size.height / 8.0);
+    CGAffineTransform finalTransform = CGAffineTransformConcat(rotateTransform, translateTransform);
     
+    id <ImageCompent> transformedImage = [[ ImageTransformFilter alloc]initWithImageCompent:image :finalTransform];
+    id <ImageCompent> finalImage =[[ImageShadowFilter alloc]initWithImageCompent:transformedImage];
     
-
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
+    [imageView setImage:finalImage];
+    [self.view addSubview:imageView];
+    
+    [super viewDidLoad];
 }
 
 - (void)viewDidUnload
