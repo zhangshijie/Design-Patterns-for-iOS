@@ -14,6 +14,9 @@
 		D843C05A16B7993D009AC658 /* Dot2.m in Sources */ = {isa = PBXBuildFile; fileRef = D843C05416B7993C009AC658 /* Dot2.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
 		D843C05B16B7993D009AC658 /* Stroke2.m in Sources */ = {isa = PBXBuildFile; fileRef = D843C05716B7993C009AC658 /* Stroke2.m */; };
 		D843C05C16B7993D009AC658 /* Vertex2.m in Sources */ = {isa = PBXBuildFile; fileRef = D843C05916B7993C009AC658 /* Vertex2.m */; };
+		D848C21316E0564500E5CD8D /* AnyPizza.m in Sources */ = {isa = PBXBuildFile; fileRef = D848C21216E0564500E5CD8D /* AnyPizza.m */; };
+		D848C21E16E058F500E5CD8D /* CJ_Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = D848C21D16E058F500E5CD8D /* CJ_Pizza.m */; };
+		D848C22116E0598400E5CD8D /* China_Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = D848C22016E0598400E5CD8D /* China_Pizza.m */; };
 		D85D115016B6BE0900CA46F0 /* Dot1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114A16B6BE0900CA46F0 /* Dot1.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
 		D85D115116B6BE0900CA46F0 /* Stroke1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114D16B6BE0900CA46F0 /* Stroke1.m */; };
 		D85D115216B6BE0900CA46F0 /* Vertex1.m in Sources */ = {isa = PBXBuildFile; fileRef = D85D114F16B6BE0900CA46F0 /* Vertex1.m */; };
@@ -75,6 +78,12 @@
 		D843C05716B7993C009AC658 /* Stroke2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke2.m; sourceTree = "<group>"; };
 		D843C05816B7993C009AC658 /* Vertex2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex2.h; sourceTree = "<group>"; };
 		D843C05916B7993C009AC658 /* Vertex2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex2.m; sourceTree = "<group>"; };
+		D848C21116E0564500E5CD8D /* AnyPizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyPizza.h; sourceTree = "<group>"; };
+		D848C21216E0564500E5CD8D /* AnyPizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyPizza.m; sourceTree = "<group>"; };
+		D848C21C16E058F500E5CD8D /* CJ_Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJ_Pizza.h; sourceTree = "<group>"; };
+		D848C21D16E058F500E5CD8D /* CJ_Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJ_Pizza.m; sourceTree = "<group>"; };
+		D848C21F16E0598400E5CD8D /* China_Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = China_Pizza.h; sourceTree = "<group>"; };
+		D848C22016E0598400E5CD8D /* China_Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = China_Pizza.m; sourceTree = "<group>"; };
 		D85D114916B6BE0900CA46F0 /* Dot1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot1.h; sourceTree = "<group>"; };
 		D85D114A16B6BE0900CA46F0 /* Dot1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot1.m; sourceTree = "<group>"; };
 		D85D114B16B6BE0900CA46F0 /* Mark1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark1.h; sourceTree = "<group>"; };
@@ -198,6 +207,19 @@
 			name = Visitor;
 			sourceTree = "<group>";
 		};
+		D848C21016E055E200E5CD8D /* TemplateMethod */ = {
+			isa = PBXGroup;
+			children = (
+				D848C21116E0564500E5CD8D /* AnyPizza.h */,
+				D848C21216E0564500E5CD8D /* AnyPizza.m */,
+				D848C21C16E058F500E5CD8D /* CJ_Pizza.h */,
+				D848C21D16E058F500E5CD8D /* CJ_Pizza.m */,
+				D848C21F16E0598400E5CD8D /* China_Pizza.h */,
+				D848C22016E0598400E5CD8D /* China_Pizza.m */,
+			);
+			name = TemplateMethod;
+			sourceTree = "<group>";
+		};
 		D85D114716B6BD7900CA46F0 /* Iterator */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,15 +282,16 @@
 		D86329AC16B296E800600875 /* SinglonTest */ = {
 			isa = PBXGroup;
 			children = (
+				D848C21016E055E200E5CD8D /* TemplateMethod */,
 				D8CC538F16B81DB900A9B602 /* ChainOfResponsibility */,
 				D8CC536F16B7D81200A9B602 /* Decorator */,
 				D843C04D16B79427009AC658 /* Visitor */,
 				D85D115616B6C4BA00CA46F0 /* Tools */,
 				D85D114716B6BD7900CA46F0 /* Iterator */,
 				D823B75A16B67647004ECC57 /* Composite */,
-				D86329B616B296E900600875 /* AppDelegate.m */,
 				D823B75816B67633004ECC57 /* Singleton */,
 				D86329B516B296E900600875 /* AppDelegate.h */,
+				D86329B616B296E900600875 /* AppDelegate.m */,
 				D86329B816B296E900600875 /* ViewController.h */,
 				D86329B916B296E900600875 /* ViewController.m */,
 				D86329BB16B296E900600875 /* ViewController.xib */,
@@ -353,11 +376,11 @@
 			isa = PBXGroup;
 			children = (
 				D8CC539C16B81E1C00A9B602 /* AttackHandler.h */,
-				D8CC53A216B821A500A9B602 /* AttackHandler2.h */,
-				D8CC53A316B821A500A9B602 /* AttackHandler2.m */,
+				D8CC539D16B81E1C00A9B602 /* AttackHandler.m */,
 				D8CC539F16B81E7600A9B602 /* AttackHandler1.h */,
 				D8CC53A016B81E7600A9B602 /* AttackHandler1.m */,
-				D8CC539D16B81E1C00A9B602 /* AttackHandler.m */,
+				D8CC53A216B821A500A9B602 /* AttackHandler2.h */,
+				D8CC53A316B821A500A9B602 /* AttackHandler2.m */,
 			);
 			name = AttackHandlers;
 			sourceTree = "<group>";
@@ -509,6 +532,9 @@
 				D8CC539E16B81E1C00A9B602 /* AttackHandler.m in Sources */,
 				D8CC53A116B81E7600A9B602 /* AttackHandler1.m in Sources */,
 				D8CC53A416B821A500A9B602 /* AttackHandler2.m in Sources */,
+				D848C21316E0564500E5CD8D /* AnyPizza.m in Sources */,
+				D848C21E16E058F500E5CD8D /* CJ_Pizza.m in Sources */,
+				D848C22116E0598400E5CD8D /* China_Pizza.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

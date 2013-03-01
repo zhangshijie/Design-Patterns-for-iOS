@@ -31,6 +31,14 @@
 //    UIImageView *iamgeview = [[UIImageView alloc] initWithFrame:self.window.frame];
 //    [iamgeview setImage:image];
 //    [self.window addSubview:iamgeview];
+    _viewController = [[ViewController alloc]init];
+    if (_viewController!=nil) {
+        NSLog(@"not nil");
+    }
+    else {
+        NSLog(@"nil");
+    }
+    [self.window addSubview:_viewController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

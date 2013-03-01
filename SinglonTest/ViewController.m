@@ -27,7 +27,9 @@
 #import "AttackHandler.h"
 #import "AttackHandler1.h"
 #import "AttackHandler2.h"
-
+#import "AnyPizza.h"
+#import "CJ_Pizza.h"
+#import "China_Pizza.h"
 
 
 
@@ -113,17 +115,28 @@
     //ChainOfResponsibility模式
     
     
-    Attack *attack1 = [[Attacks1 alloc] init];
-    Attack *attack2 = [[Attacks2 alloc] init];
+//    Attack *attack1 = [[Attacks1 alloc] init];
+//    Attack *attack2 = [[Attacks2 alloc] init];
+//    
+//    AttackHandler *AttackHandler1 = [[AttackHandler1 alloc] init];
+//    AttackHandler *AttackHandler2 = [[AttackHandler2 alloc] init];
+//    AttackHandler1.nextHandler= AttackHandler2;
+//    
+//    [AttackHandler1 handle:attack1];
+//    [AttackHandler1 handle:attack2];
     
-    AttackHandler *AttackHandler1 = [[AttackHandler1 alloc] init];
-    AttackHandler *AttackHandler2 = [[AttackHandler2 alloc] init];
-    AttackHandler1.nextHandler= AttackHandler2;
+    //TemplateMethod
     
-    [AttackHandler1 handle:attack1];
-    [AttackHandler1 handle:attack2];
+//    [super viewDidLoad];
+//    NSLog(@"here");
+//    AnyPizza *pizza = [[ China_Pizza alloc] init];
+//    [pizza make];
+//    AnyPizza *pizza2 = [[ CJ_Pizza alloc] init];
+//    [pizza2 make];
     
-    [super viewDidLoad];
+    
+    
+ 
 }
 
 - (void)viewDidUnload
